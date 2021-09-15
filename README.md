@@ -3,4 +3,4 @@
 
 <a href="https://codeclimate.com/github/maryshtd/frontend-project-lvl1"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
-![Linter](https://github.com/maryshtd/frontend-project-lvl1/actions/workflows/make-lint.yml)
+[![Node.js CI](https://github.com/maryshtd/frontend-project-lvl1/actions/workflows/make-lint.yml/badge.svg)](https://github.com/maryshtd/frontend-project-lvl1/actions/workflows/make-lint.yml)
