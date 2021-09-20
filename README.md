@@ -5,4 +5,8 @@
 
 [![Node.js CI](https://github.com/maryshtd/frontend-project-lvl1/actions/workflows/make-lint.yml/badge.svg)](https://github.com/maryshtd/frontend-project-lvl1/actions/workflows/make-lint.yml)
 
+### Even game:
 [![asciicast](https://asciinema.org/a/IL9LfyXuuuPuqjc5IlcDqEfBG.svg)](https://asciinema.org/a/IL9LfyXuuuPuqjc5IlcDqEfBG)
+
+### Calc game:
+[![asciicast](https://asciinema.org/a/VWGMakCqRQspFUzAHoBd6L9tu.svg)](https://asciinema.org/a/VWGMakCqRQspFUzAHoBd6L9tu)
