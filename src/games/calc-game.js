@@ -1,6 +1,6 @@
 import {
   numberOfRounds, askQuestion, getAnswer, checkAnswer,
-  greetUser, congratulateUser, onWrongAnswer, onRightAnswer,
+  greetUser, congratulateUser, onWrongAnswer, onRightAnswer, getRandomNumber,
 } from '../index.js';
 
 const calcGame = () => {
@@ -9,8 +9,8 @@ const calcGame = () => {
   const operators = ['+', '-', '*'];
   console.log('What is the result of the expression?');
   for (let i = 0; i < numberOfRounds; i += 1) {
-    const randomNum1 = Math.floor(Math.random() * 10) + 1;
-    const randomNum2 = Math.floor(Math.random() * 10) + 1;
+    const randomNum1 = getRandomNumber();
+    const randomNum2 = getRandomNumber();
     const randomOperator = operators[Math.floor(Math.random() * operators.length)];
     let expectedAnswer = 0;
     switch (randomOperator) {

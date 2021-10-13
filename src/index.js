@@ -36,3 +36,8 @@ export const onWrongAnswer = (actualAnswer, expectedAnswer) => {
 export const onRightAnswer = () => {
   console.log('Correct!');
 };
+
+export const getRandomNumber = () => {
+  const random = Math.floor(Math.random() * 10) + 1;
+  return random;
+};
