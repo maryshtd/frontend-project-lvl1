@@ -17,6 +17,7 @@ const evenGame = () => {
       result += 1;
     } else {
       onWrongAnswer(answer, expectedAnswer);
+      break;
     }
   }
   if (result === numberOfRounds) {
