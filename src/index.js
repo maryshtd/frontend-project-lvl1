@@ -41,3 +41,5 @@ export const getRandomNumber = (from = 1, to = 100) => {
   const random = Math.floor(Math.random() * (to - from)) + from;
   return random;
 };
+
+export default greetUser;
