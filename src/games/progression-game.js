@@ -31,7 +31,7 @@ const progressionGame = () => {
       onRightAnswer();
       result += 1;
     } else {
-      onWrongAnswer(answer, expectedAnswer);
+      onWrongAnswer(answer, expectedAnswer, name);
       break;
     }
   }

@@ -29,8 +29,8 @@ export const congratulateUser = (name) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export const onWrongAnswer = (actualAnswer, expectedAnswer) => {
-  console.log(`${actualAnswer} is wrong answer ;(. Correct answer was "${expectedAnswer}". \nLet's try again!`);
+export const onWrongAnswer = (actualAnswer, expectedAnswer, name) => {
+  console.log(`${actualAnswer} is wrong answer ;(. Correct answer was "${expectedAnswer}". \nLet's try again, ${name}!`);
 };
 
 export const onRightAnswer = () => {
