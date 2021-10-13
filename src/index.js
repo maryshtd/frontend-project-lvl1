@@ -37,7 +37,7 @@ export const onRightAnswer = () => {
   console.log('Correct!');
 };
 
-export const getRandomNumber = () => {
-  const random = Math.floor(Math.random() * 10) + 1;
+export const getRandomNumber = (from = 1, to = 100) => {
+  const random = Math.floor(Math.random() * (to - from)) + from;
   return random;
 };
