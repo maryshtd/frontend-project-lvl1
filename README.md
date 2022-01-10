@@ -5,8 +5,13 @@
 
 [![Node.js CI](https://github.com/maryshtd/frontend-project-lvl1/actions/workflows/make-lint.yml/badge.svg)](https://github.com/maryshtd/frontend-project-lvl1/actions/workflows/make-lint.yml)
 
+
+### Привет! Сыграй в эти мини-игры для проверки знаний по математике.
+### Как установить игру:
+[![asciicast](https://asciinema.org/a/Zt49RdiOIsSH90DgPKIWd6KKA.svg)](https://asciinema.org/a/Zt49RdiOIsSH90DgPKIWd6KKA)
+
 ### Even game:
-[![asciicast](https://asciinema.org/a/IL9LfyXuuuPuqjc5IlcDqEfBG.svg)](https://asciinema.org/a/IL9LfyXuuuPuqjc5IlcDqEfBG)
+[![asciicast](https://asciinema.org/a/e6PHFbHCPtEJSQsDFRnzCo1xm.svg)](https://asciinema.org/a/e6PHFbHCPtEJSQsDFRnzCo1xm)
 
 ### Calc game:
 [![asciicast](https://asciinema.org/a/VWGMakCqRQspFUzAHoBd6L9tu.svg)](https://asciinema.org/a/VWGMakCqRQspFUzAHoBd6L9tu)
