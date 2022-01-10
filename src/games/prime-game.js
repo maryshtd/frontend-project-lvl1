@@ -12,7 +12,7 @@ const isPrime = (num) => {
 const primeGame = () => {
   const randomNum = getRandomNumber(1, 30);
   const expectedAnswer = isPrime(randomNum) ? 'yes' : 'no';
-  console.log(randomNum);
+  console.log(`Question: ${randomNum}`);
   return expectedAnswer;
 };
 

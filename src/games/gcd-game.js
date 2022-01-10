@@ -11,7 +11,7 @@ const gcdGame = () => {
   const randomNum1 = getRandomNumber();
   const randomNum2 = getRandomNumber();
   const expectedAnswer = gcd(randomNum1, randomNum2);
-  console.log(`${randomNum1} ${randomNum2}`);
+  console.log(`Question: ${randomNum1} ${randomNum2}`);
   return String(expectedAnswer);
 };
 

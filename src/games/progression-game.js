@@ -18,7 +18,8 @@ const progressionGame = () => {
   const progressionQuestion = progression.slice();
   progressionQuestion[randomIndex] = '..';
   const expectedAnswer = progression[randomIndex];
-  console.log(progressionQuestion.join(' '));
+  const question = progressionQuestion.join(' ');
+  console.log(`Question: ${question}`);
   return String(expectedAnswer);
 };
 
