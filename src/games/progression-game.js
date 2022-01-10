@@ -14,7 +14,7 @@ const generateProgression = () => {
 
 const progressionGame = () => {
   const progression = generateProgression();
-  const randomIndex = getRandomNumber(1, 10);
+  const randomIndex = getRandomNumber(0, 9);
   const progressionQuestion = progression.slice();
   progressionQuestion[randomIndex] = '..';
   const expectedAnswer = progression[randomIndex];
