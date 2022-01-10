@@ -1,7 +1,4 @@
-import {
-  numberOfRounds, askQuestion, getAnswer, checkAnswer, greetUser,
-  congratulateUser, onWrongAnswer, onRightAnswer, getRandomNumber,
-} from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const gcd = (num1, num2) => {
   if (num2) {
@@ -11,26 +8,11 @@ const gcd = (num1, num2) => {
 };
 
 const gcdGame = () => {
-  const name = greetUser();
-  let result = 0;
-  console.log('Find the greatest common divisor of given numbers.');
-  for (let i = 0; i < numberOfRounds; i += 1) {
-    const randomNum1 = getRandomNumber();
-    const randomNum2 = getRandomNumber();
-    const expectedAnswer = gcd(randomNum1, randomNum2);
-    askQuestion(`${randomNum1} ${randomNum2}`);
-    const answer = Number(getAnswer());
-    if (checkAnswer(answer, expectedAnswer)) {
-      onRightAnswer();
-      result += 1;
-    } else {
-      onWrongAnswer(answer, expectedAnswer, name);
-      break;
-    }
-  }
-  if (result === numberOfRounds) {
-    congratulateUser(name);
-  }
+  const randomNum1 = getRandomNumber();
+  const randomNum2 = getRandomNumber();
+  const expectedAnswer = gcd(randomNum1, randomNum2);
+  console.log(`${randomNum1} ${randomNum2}`);
+  return String(expectedAnswer);
 };
 
 export default gcdGame;
