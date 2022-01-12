@@ -12,8 +12,8 @@ const isPrime = (num) => {
 const primeGame = () => {
   const randomNum = getRandomNumber(1, 30);
   const expectedAnswer = isPrime(randomNum) ? 'yes' : 'no';
-  console.log(`Question: ${randomNum}`);
-  return expectedAnswer;
+  const question = `Question: ${randomNum}`;
+  return [question, expectedAnswer];
 };
 
 export default primeGame;

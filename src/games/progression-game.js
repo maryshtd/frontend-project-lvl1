@@ -1,26 +1,26 @@
 import getRandomNumber from '../getRandomNumber.js';
 
-const generateProgression = () => {
-  const randomBeginning = getRandomNumber(1, 10);
-  const randomIncrease = getRandomNumber(1, 10);
+const generateProgression = (beginning, increase) => {
   const array = [];
-  array.push(randomBeginning);
+  array.push(beginning);
   for (let i = 1; i < 10; i += 1) {
-    const newNumber = array[i - 1] + randomIncrease;
+    const newNumber = array[i - 1] + increase;
     array.push(newNumber);
   }
   return array;
 };
 
 const progressionGame = () => {
-  const progression = generateProgression();
+  const randomBeginning = getRandomNumber(1, 10);
+  const randomIncrease = getRandomNumber(1, 10);
+  const progression = generateProgression(randomBeginning, randomIncrease);
   const randomIndex = getRandomNumber(0, 9);
   const progressionQuestion = progression.slice();
   progressionQuestion[randomIndex] = '..';
   const expectedAnswer = progression[randomIndex];
-  const question = progressionQuestion.join(' ');
-  console.log(`Question: ${question}`);
-  return String(expectedAnswer);
+  const progressionJoined = progressionQuestion.join(' ');
+  const question = `Question: ${progressionJoined}`;
+  return [question, String(expectedAnswer)];
 };
 
 export default progressionGame;
