@@ -7,23 +7,18 @@ const runGame = (rule, gameFunc) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(rule);
-  let result = 0;
   for (let i = 0; i < numberOfRounds; i += 1) {
     const [question, expectedAnswer] = gameFunc();
-    console.log(question);
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer === expectedAnswer) {
-      console.log('Correct!');
-      result += 1;
-    } else {
+    if (answer !== expectedAnswer) {
       console.log(`${answer} is wrong answer ;(. Correct answer was "${expectedAnswer}".`);
       console.log(`Let's try again, ${name}!`);
-      break;
+      return;
     }
+    console.log('Correct!');
   }
-  if (result === numberOfRounds) {
-    console.log(`Congratulations, ${name}!`);
-  }
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default runGame;

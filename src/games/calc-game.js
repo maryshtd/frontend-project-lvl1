@@ -1,28 +1,26 @@
 import getRandomNumber from '../getRandomNumber.js';
 
+export const operators = ['+', '-', '*'];
+
 const calculate = (operator, num1, num2) => {
-  let result = 0;
   switch (operator) {
     case '+':
-      result = (num1 + num2);
-      break;
+      return (num1 + num2);
     case '-':
-      result = (num1 - num2);
-      break;
+      return (num1 - num2);
+    case '*':
+      return (num1 * num2);
     default:
-      result = (num1 * num2);
-      break;
+      throw new Error(`operation ${operator} is not supported`);
   }
-  return result;
 };
 
 const calcGame = () => {
-  const operators = ['+', '-', '*'];
-  const randomNum1 = getRandomNumber();
-  const randomNum2 = getRandomNumber();
-  const randomOperator = operators[getRandomNumber(0, 2)];
-  const expectedAnswer = calculate(randomOperator, randomNum1, randomNum2);
-  const question = `Question: ${randomNum1} ${randomOperator} ${randomNum2}`;
+  const randomNumber1 = getRandomNumber();
+  const randomNumber2 = getRandomNumber();
+  const randomOperator = operators[getRandomNumber(0, operators.length - 1)];
+  const expectedAnswer = calculate(randomOperator, randomNumber1, randomNumber2);
+  const question = `${randomNumber1} ${randomOperator} ${randomNumber2}`;
   return [question, String(expectedAnswer)];
 };
 

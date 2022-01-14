@@ -8,10 +8,10 @@ const gcd = (num1, num2) => {
 };
 
 const gcdGame = () => {
-  const randomNum1 = getRandomNumber();
-  const randomNum2 = getRandomNumber();
-  const expectedAnswer = gcd(randomNum1, randomNum2);
-  const question = `Question: ${randomNum1} ${randomNum2}`;
+  const randomNumber1 = getRandomNumber();
+  const randomNumber2 = getRandomNumber();
+  const expectedAnswer = gcd(randomNumber1, randomNumber2);
+  const question = `${randomNumber1} ${randomNumber2}`;
   return [question, String(expectedAnswer)];
 };
 

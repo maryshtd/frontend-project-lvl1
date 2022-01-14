@@ -10,9 +10,9 @@ const isPrime = (num) => {
 };
 
 const primeGame = () => {
-  const randomNum = getRandomNumber(1, 30);
-  const expectedAnswer = isPrime(randomNum) ? 'yes' : 'no';
-  const question = `Question: ${randomNum}`;
+  const randomNumber = getRandomNumber(1, 30);
+  const expectedAnswer = isPrime(randomNumber) ? 'yes' : 'no';
+  const question = `Question: ${randomNumber}`;
   return [question, expectedAnswer];
 };
 
